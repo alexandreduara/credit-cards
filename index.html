@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,27 +15,39 @@
   </style>
 </head>
 <body>
+  <div class="cartão">
+    <article class="cartao__frente">
+      <img src="./assets/img/card-logo.svg" alt="Logo do cartão">
+      <p class="cartao__frente--numero">0000 0000 0000 0000</p>
+      <p class="cartao__frente--nome">Jane Appleseed</p>
+      <p class="cartao__frente--data">00/00</p>
+    </article>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <article class="cartao__tras">
+      <p class="cartao__tras--codigo">000</p>
+    </article>
+  </div>
 
-  000
+  <div class="formulario">
+    <label for="cardholder">Cardholder Name</label>
+    <input type="text" name="cardholder">
+    <!-- e.g. Jane Appleseed -->
+    
+    <label for="card__number">Card Number</label>
+    <input type="text">
+    <!-- e.g. 1234 5678 9123 0000 -->
+    
+    <label for="date">Exp. Date (MM/YY)</label>
+    <input type="number" name="date" id="" placeholder="MM">
+    <input type="number" name="" id="" placeholder="YY">
 
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
+    <label for="CVC">CVC</label>
+    <input type="number" placeholder="123">
+    
+    <button class="btn">Confirm</button>
+    
+    
+  </div>
 
   <!-- Completed state start -->
 

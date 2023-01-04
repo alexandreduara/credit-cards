@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    border: 0px;
+}
+
+html{
+    background-image: url(../img/bg-main-desktop.png);
+    background-repeat: no-repeat;
+}
+
+.cartao__frente{
+    background-image: url(../img/bg-card-front.png);
+    background-repeat: no-repeat;
+    height: 16em;
+    width: 28em;
+
+    position: relative;
+    left: 10em;
+    top: 5em;
+}
+
+.cartao__frente > img{
+    padding: 2em;
+}
+
+.cartao__frente > p {
+    display: inline-flex;
+    color: white;
+    line-height: 0.1em;
+    justify-content: center;
+}
+
+.cartao__frente--numero{
+    display: block;
+    width: 100%;
+    font-size: 2em;
+}
+
+.cartao__frente--nome{
+    padding: 1em 14em 0em 3em;
+}
+
+.cartao__tras{
+    background-image: url(../img/bg-card-back.png);
+    background-repeat: no-repeat;
+    height: 16em;
+    width: 28em;
+    position: relative;
+    left: 15em;
+    top: 5em;
+    display: flex;
+}
+
+.cartao__tras--codigo{
+    color: white;
+    margin: 7em 4em auto auto;
+}
