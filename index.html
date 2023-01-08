@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -8,19 +8,16 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Frontend Mentor | Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="cartão">
     <article class="cartao__frente">
       <img src="./assets/img/card-logo.svg" alt="Logo do cartão">
       <p class="cartao__frente--numero">0000 0000 0000 0000</p>
-      <p class="cartao__frente--nome">Jane Appleseed</p>
-      <p class="cartao__frente--data">00/00</p>
+      <div>
+        <p class="cartao__frente--nome">Jane Appleseed</p>
+        <p class="cartao__frente--data">00/00</p>
+      </div>
     </article>
 
     <article class="cartao__tras">
@@ -29,35 +26,42 @@
   </div>
 
   <div class="formulario">
+    <section>
     <label for="cardholder">Cardholder Name</label>
-    <input type="text" name="cardholder">
-    <!-- e.g. Jane Appleseed -->
+    <input type="text" name="cardholder" placeholder="e.g. Jane Appleseed">
+    </section>
     
+    <section>
     <label for="card__number">Card Number</label>
-    <input type="text">
-    <!-- e.g. 1234 5678 9123 0000 -->
-    
-    <label for="date">Exp. Date (MM/YY)</label>
-    <input type="number" name="date" id="" placeholder="MM">
-    <input type="number" name="" id="" placeholder="YY">
+    <input type="text" placeholder="e.g. 1234 5678 9123 0000">
+    </section>
 
-    <label for="CVC">CVC</label>
-    <input type="number" placeholder="123">
-    
+    <div class="data__cvc">  
+      <section class="data">
+        <label for="date">Exp. Date (MM/YY)</label>
+        <div>
+          <input type="number" name="date" id="" placeholder="MM">
+          <input type="number" name="" id="" placeholder="YY">
+       </div>
+      </section>
+      
+      <section class="cvc">
+        <label for="CVC">CVC</label>
+        <input type="number" placeholder="123">
+      </section>
+    </div>
     <button class="btn">Confirm</button>
+
+<!--Thank you!
+    We've added your card details
+    Continue -->
     
     
   </div>
 
   <!-- Completed state start -->
 
-  Thank you!
-  We've added your card details
-  Continue
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 </html>

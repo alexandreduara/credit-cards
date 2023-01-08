@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
 *{
     padding: 0px;
     border: 0px;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 html{
@@ -25,7 +33,7 @@ html{
 
 .cartao__frente > p {
     display: inline-flex;
-    color: white;
+    color: hsl(270, 3%, 87%);
     line-height: 0.1em;
     justify-content: center;
 }
@@ -36,8 +44,12 @@ html{
     font-size: 2em;
 }
 
-.cartao__frente--nome{
-    padding: 1em 14em 0em 3em;
+.cartao__frente div{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    color: hsl(270, 3%, 87%);
 }
 
 .cartao__tras{
@@ -52,6 +64,59 @@ html{
 }
 
 .cartao__tras--codigo{
-    color: white;
+    color: hsl(270, 3%, 87%);
     margin: 7em 4em auto auto;
+}
+
+.formulario{
+    width: 350px;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.formulario section{
+    margin-bottom: 30px;
+}
+
+.formulario label{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+.formulario input{
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    padding: 10px 0;
+    margin: 2px 0 5px 0;
+}
+
+.formulario button{
+    background-color: hsl(278, 68%, 11%);
+    padding: 15px;
+    color: hsl(270, 3%, 87%);
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.formulario div{
+    display: inline-flex;
+}
+
+.data input{
+    width: 60px;
+    margin-right: 10px ;
+}
+
+.cvc input{
+    width: 100%;
+}
+
+.cvc {
+    margin-left: 20px;
 }
